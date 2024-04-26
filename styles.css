@@ -1,0 +1,220 @@
+*{
+body
+{
+  display:flex;
+  flex-direction:column;
+}
+#wrapper-div
+{
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  min-height:100px;
+  margin:auto;
+}
+#logo-div
+{
+  display:flex;
+  flex-direction:row;
+  width:98%;
+  min-height:50px;
+  background-color:lightblue;
+  justify-content: space-between;
+  padding-right:2%
+}
+  img#image1{
+    border-radius: 15px;
+    width: 10%;
+    padding: 2%;
+  }
+  img#image2{
+    width: 10%;
+    height: 80px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 15px;
+  }
+  }
+#nav-div
+{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  min-height:30px;
+  background-color:lightblue;
+  margin-top:10px;
+  justify-content:space between;
+  align-items:center;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+color: Red;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+}
+nav ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+}
+nav ul li a:hover::after{
+width: 100%;
+}
+#header-banner-div
+{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  background-color:lightblue;
+  font-size: 30px;
+  color: red;
+  margin-top:10px;
+  justify-content:center;
+  align-items:center;
+}
+
+#slider{
+  overflow: hidden;
+  background-color: lightblue;
+  width: 50%
+}
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin:0;
+  left:0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  height: 400px;
+  width: 20%;
+}
+@keyframes slider {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70& {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+#main-div
+{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  min-height:500px;
+  margin-top:10px;
+}
+#body-area-div
+{
+  display:flex;
+  flex-direction:column;
+  flex-basis:48%;
+  Background-color:lightblue;
+  margin-right: 10px;
+
+}
+  img{
+    width:100%;
+    border-radius:15px;
+    position: relative;
+  }
+#support{
+  display: flex;
+  width: 40%;
+  margin: 5px;
+  min-height: 10px;
+  align-self: center;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  background-color: red;
+  border-radius: 15px;
+  }
+#About-div
+{ display:flex;
+  flex-direction:column;
+  flex-basis: 60%;
+  background-color: lightblue;
+  color: blue;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px 2%;
+  h1{color:red;
+  }
+  img{
+    width:50%;
+    border-radius:15px;
+    position: relative;
+    margin-top: 10px;
+    align-self: center;
+  }
+}
+#sidebar-div
+{		display:flex;
+  flex-direction:column;
+  flex-basis:23%;
+  background-color:lightgreen;
+  border-radius: 15px;
+  color: Red;
+  font-family: cursive;
+  align-items:center;
+  padding: 5px 5%;
+  h1{color:red;
+    form{
+      width: 100%;
+    }
+}
+}
+
+#footer-div
+{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  min-height:50px;
+  background-color:darkgreen;
+  color:white;
+  margin-top:10px;
+  justify-content:center;
+  align-items:center;
+}
+/* .....................css for small screens........ */
+@media only screen and (max-width: 600px){
+
+
+
+}
+</style>

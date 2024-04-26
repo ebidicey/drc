@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title> Registration</title>
+  </head>
+  <body>
+    <div id="wrapper-div">
+    <div id="logo-div">
+      <img id="image1" src="Images\IMG_20240410_122405_980.jpg">
+      <img id="image2" src="Images\360_F_99490882_I2HzX884DH0NLNecX5u7XKBt7bVbVize.jpg">
+    </div>
+    <div id="nav-div">
+      <nav>
+        <ul>
+           <li><a href="index.html">Home</a<li>
+           <li><a href="#">Registration</a<li>
+           <li><a href="history.html">History</a<li>
+           <li><a href="project.html">Projects</a<li>
+           <li><a href="index.html #sidebar-div">Mission</a></li>
+           <li><a href="index.html #sidebar-div">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="header-banner-div">
+    Plateau State Disability Rights Commission
+    </div>
+  <p><form action="process.form.php" method="post">
+    <p><h2>Registration Form</p></h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    <p><label for="status">Status</label>
+    <select id="status" name="status" required></p>
+      <option value="1">Individual</option>
+      <option value="2">OPD</option>
+      <option value="3">Educational Institution</option>
+      <option value="4">Others</option>
+    </select>
+    <p><h4>Date of Birth/Establishment</h4>
+    <input type="date" id="date" name="date" required>
+  </p>
+  <p><fieldset>
+    <legend>Address</legend>
+    <label for="street">Street</label>
+    <input type="text" id="street" name="street" required>
+    <label for="town">Town</label>
+    <input type="text" id="town" name="town"required>
+    <label for="lga">LGA</label>
+    <input type="text" id="lga" name="lga" required>
+  </fieldset>
+  <label>Email</label>
+    <input type="email" name="email"required>
+    <label>Phone/Whatsapp Number</label>
+    <input type="tel" id="phone" name="phone" required>
+    <fieldset
+    <legend>Individuals only</legend>
+    <fieldset>
+      <legend>Gender</legend>
+      <p><label>
+      <input type="radio" name="gender" value="1">
+      Male
+      </label>
+      <label>
+      <input type="radio" name="gender" value="2">
+      Female
+    </label></p>
+  </fieldset><p>
+  <fieldset>
+  <legend>Disability Type</legend>
+  <label>
+  <input type="checkbox" name="hearing">
+  Hearing impairment
+</label><br>
+<label>
+<input type="checkbox" name="physical">
+Physical impairment
+</label><br>
+<label>
+<input type="checkbox" name="visual">
+Visual impairment
+</label><br>
+<label>
+<input type="checkbox" name="autism">
+Autism
+</label><br>
+<label>
+<input type="checkbox" name="downsyndrome">
+Down Syndrome
+</label><br>
+<label>
+<input type="checkbox" name="adhd">
+ADHD
+</label><br>
+<label>
+<input type="checkbox" name="others">
+Others
+</label>
+</fieldset></p>
+<fieldset>
+  <legend>Employment Status</legend>
+  <p><label>
+  <input type="radio" name="type" value="3">
+  Employed
+  </label>
+  <label>
+  <input type="radio" name="type" value="4">
+  Unemployed
+</label></p>
+</fieldset><p>
+  <fieldset>
+    <legend>Indegene Status</legend>
+    <p><label>
+    <input type="radio" name="type" value="5">
+    Indegene
+    </label>
+    <label>
+    <input type="radio" name="type" value="6">
+    Non-indigene
+  </label></p>
+  <p><label for="name">Local Government of Origin</label>
+    <input type="text" id="local" name="origin">
+    <label for="name">State of Origin</label>
+    <input type="text" id="state" name="state">
+    <label for="name">Nationality</label>
+    <input type="text" id="nationality"name="nation">
+</fieldset><p>
+  <fieldset>
+    <legend>Marital Status</legend>
+    <label>
+    <input type="radio" name="type" value="7">
+    Single
+  </label>
+    <label>
+    <input type="radio" name="type" value="8">
+    Married
+  </label>
+  <label>
+  <input type="radio" name="type" value="9">
+  Divorced
+</label>
+  <label>
+  <input type="radio" name="type" value="10">
+  Widowed
+</label>
+</fieldset><p>
+  <p><label for="priority">Educational Level</label>
+  <select id="priority" name="education"></p>
+    <option value="1">Doctorate</option>
+    <option value="2">Masters</option>
+    <option value="3">Graduate</option>
+    <option value="4">Diploma</option>
+    <option value="6">School Cert.</option>
+    <option value="7">Primary School</option>
+    <option value="8">Others</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>Organisations only</legend>
+<label for="name">Number of staff</label>
+<input type="number" id="staff" name="staff">
+<label for="name">Number of staff with disability</label>
+<input type="number" id="staffnum" name="staffnum">
+<p>Schools/Training centres only</p>
+<label for="name">Number of pupils/students</label>
+<input type="number" id="students" name="students">
+<label for="name">Number of pupils/students with disability</label>
+<input type="number" id="disstudents" name="disstudents">
+</fieldset>
+<label>
+<input type="checkbox" name="confirm" required>
+I assert that all the data supplied here are true and reliable.
+</label>
+<br>
+<button>Submit</button>
+
+
+</form></p>
+  </body>
+</html>
